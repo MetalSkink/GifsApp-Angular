@@ -48,4 +48,9 @@ export class GifsService {
     })
     // console.log(this._historial);
   }
+
+  borrarGif(index:number){
+    this._historial.splice(index,1);
+    localStorage.setItem('historial',JSON.stringify(this._historial));
+  }
 }

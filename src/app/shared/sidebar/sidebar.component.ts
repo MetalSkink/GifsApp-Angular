@@ -16,4 +16,8 @@ export class SidebarComponent  {
   buscar(termino:string){
     this.gifsService.buscarGifs(termino);
   }
+
+  borrar(index: number){
+    this.gifsService.borrarGif(index);
+  }
 }
